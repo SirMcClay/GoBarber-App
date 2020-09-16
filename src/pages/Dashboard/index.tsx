@@ -43,6 +43,7 @@ const Dashboard: React.FC = () => {
 
   const NavigateToProfile = useCallback(() => {
     navigate('Profile');
+    // signOut();
   }, [navigate]);
 
   const navigateToCreateAppointment = useCallback(
@@ -76,7 +77,16 @@ const Dashboard: React.FC = () => {
           <ProviderContainer
             onPress={() => navigateToCreateAppointment(provider.id)}
           >
-            <ProviderAvatar source={{ uri: provider.avatar_url }} />
+            <ProviderAvatar
+              source={
+                provider.avatar_url
+                  ? { uri: provider.avatar_url }
+                  : {
+                      uri:
+                        'https://api.adorable.io/avatars/100/abott@adorable.png',
+                    }
+              }
+            />
 
             <ProviderInfo>
               <ProviderName>{provider.name}</ProviderName>
