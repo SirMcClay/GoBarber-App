@@ -18,6 +18,8 @@ export const Header = styled.View`
   align-items: center;
 `;
 
+// Header.displayName = 'DashboardHeader'; !!! Muito util para debugar com o Flipper
+
 export const HeaderTitle = styled.Text`
   color: #f4ede8;
   font-size: 20px;
