@@ -40,6 +40,7 @@
         "no-unused-expressions": "off",
         "camelcase": "off",
         "@typescript-eslint/no-explicit-any": "off",
+        "import/no-duplicates": "off",
         "import/extensions": [
             "error",
             "ignorePackages",
