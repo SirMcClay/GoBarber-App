@@ -1,4 +1,4 @@
-package com.appgobarber;
+package com.appgobarbermmyapp;
 
 import com.facebook.react.ReactActivity;
 import org.devio.rn.splashscreen.SplashScreen;
