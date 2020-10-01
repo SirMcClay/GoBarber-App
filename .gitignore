@@ -64,3 +64,5 @@ buck-out/
 
 /coverage
 resources
+
+.env
