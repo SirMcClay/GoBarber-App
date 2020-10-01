@@ -1,8 +1,8 @@
 import axios from 'axios';
+import { API_URL_PRODUCTION } from '../env';
 
 const api = axios.create({
-  // baseURL: 'http://10.0.2.2:3333', // Android Studio Emulator IP
-  baseURL: 'https://nodedeploy.mmyapp.com',
+  baseURL: API_URL_PRODUCTION,
 });
 
 export default api;

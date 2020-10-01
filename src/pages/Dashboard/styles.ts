@@ -41,6 +41,12 @@ export const UserAvatar = styled.Image`
   border-radius: 28px;
 `;
 
+export const ProviderText = styled.Text`
+  color: #ff9000;
+  font-family: 'RobotoSlab-Medium';
+  padding: 32px 24px 16px;
+`;
+
 export const ProvidersList = styled(FlatList as new () => FlatList<Provider>)`
   padding: 32px 24px 16px;
 `;
